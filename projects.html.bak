@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Projects</title>
+	<link rel="stylesheet" type="text/css" href="css/projectstyle.css">
+
+</head>
+<body bgcolor="#191919">
+	<!----First Page Section start---->
+	<nav>
+	<div class="topnav" id="myTopnav">
+				
+				<a href="index.html">Home</a>
+				<a href="aboutme.html">About Me</a>
+				<a href="projects.html">Projects</a>
+				<a href="certificates.html">Certificates</a>
+			</div>
+		</nav>
+
+	<!----About section start---->
+<!-- image view container -->
+ <div class="container">
+<div class="row">
+ <div class="col-3">
+ <!-- blank -->
+ </div>
+	 <div class="col-6">
+	 <div id="picContainer">
+	 <div class="row">
+	 <div class="col-8">
+	 <img id="imgViewer" class="prev" src="img/projects.jpg">
+	 </div>
+	 <div class="col-4">
+	 <!-- title and description -->
+	 <h2 id="topicTtl">Title</h2>
+	 <p id="topicDescrpt">Description</p>
+ </div>
+			</div>
+		</div>
+	</div>
+ </div>
+ <!-- hover or clicked to display -->
+ <div class="row">
+ <div class="col-3">
+ <!--blank-->
+ </div>
+ <div class="col-2">
+	 <div class="optContainer">
+	 <img id="imgOption1" alt="no image" src="img/1.png"
+	 class="imgSelected" onmouseover="previewImg1(this)">
+	 </div>
+	  <div class="optContainer">
+	 <img id="imgOption1" alt="no image" src="img/2.png"
+	 class="imgSelected" onmouseover="previewImg2(this)">
+ 
+	</div>
+	 <div class="optContainer">
+	 <img id="imgOption1" alt="no image" src="img/3.png"
+	 class="imgSelected" onmouseover="previewImg3(this)">
+ 
+	</div>
+ </div>
+	 <div class="col-2">
+	 <div class="optContainer">
+	 <img id="imgOption1" alt="no image" src="img/4.png"
+	 class="imgSelected" onmouseover="previewImg4(this)">
+	 </div>
+	  <div class="optContainer">
+	 <img id="imgOption1" alt="no image" src="img/5.png"
+	 class="imgSelected" onmouseover="previewImg5(this)">
+ 
+	</div>
+	 <div class="optContainer">
+	 <img id="imgOption1" alt="no image" src="img/6.png"
+	 class="imgSelected" onmouseover="previewImg6(this)">
+ 
+	</div>
+ </div>
+ 
+	 <div class="col-2">
+	 <div class="optContainer">
+	 <img id="imgOption1" alt="no image" src="img/7.png"
+	 class="imgSelected" onmouseover="previewImg7(this)">
+	 </div>
+	 
+	  <div class="optContainer">
+	 <img id="imgOption1" alt="no image" src="img/8.png"
+	 class="imgSelected" onmouseover="previewImg8(this)">
+ 
+			</div>
+			 <div class="optContainer">
+	 <img id="imgOption1" alt="no image" src="img/9.png"
+	 class="imgSelected" onmouseover="previewImg9(this)">
+ 
+	</div>
+		</div>
+	</div>
+ </div>
+	<!------Contact Me------>
+	<footer>
+	<div class="contact-me">
+		<p>JULIUS V. ARISTAIN</p>
+		<p>For more question about my website click my social media account.</p>
+		<div class="social">
+			<a href="https://www.facebook.com/aristainj"><i class="fab fa-facebook-f"></i></a>
+			<a href="https://www.instagram.com/aristainj/?hl=en"><i class="fab fa-instagram"></i></a>
+			<a href="#"><i class="fab fa-dribbble"></i></a>
+		</div>
+		</div>
+	</footer>
+<script>
+var imgCount = 0;
+var title;
+var desc;
+var imgContent = [
+ ["imgOption1", "JPLM", "Is a type of website that sell product."],
+ ["imgOption2", "Sign - Up", "Is a website deisgn that user can sign up."],
+ ["imgOption2", "Log - In", "Is a website deisgn that user can Log In."],
+ ["imgOption2", "P-Mechanics", "Is a type of website that sell car parts."],
+ ["imgOption2", "A-Studio", "My project in Sr. High School, Android studio design"],
+ ["imgOption2", "Parts", "Part of the Premium mechanics website."],
+ ["imgOption2", "Calculator", "Its like calculator application but html and css design."],
+ ["imgOption2", "Cisco", "Cisco pocket tracer is one of the project that i use all my time."],
+ ["imgOption3", "Calendar", "Its like calender app in computer you can see the events."]
+];
+function previewImg1(imgSrc){
+ document.getElementById("imgViewer").src = imgSrc.src;
+ imgContent[imgCount][0] = imgSrc.id;
+ document.getElementById("topicTtl").innerHTML ="JPLM";
+ document.getElementById("topicDescrpt").innerHTML ="Is a type of website that sell product.";
+}
+function previewImg2(imgSrc){
+ document.getElementById("imgViewer").src = imgSrc.src;
+ imgContent[imgCount][0] = imgSrc.id;
+ document.getElementById("topicTtl").innerHTML ="Sign - Up";
+ document.getElementById("topicDescrpt").innerHTML ="Is a website deisgn that user can sign up.";
+}
+function previewImg3(imgSrc){
+ document.getElementById("imgViewer").src = imgSrc.src;
+ imgContent[imgCount][0] = imgSrc.id;
+ document.getElementById("topicTtl").innerHTML ="Log - In";
+ document.getElementById("topicDescrpt").innerHTML ="Is a website deisgn that user can Log In.";
+}
+function previewImg4(imgSrc){
+ document.getElementById("imgViewer").src = imgSrc.src;
+ imgContent[imgCount][0] = imgSrc.id;
+ document.getElementById("topicTtl").innerHTML ="P-Mechanics";
+ document.getElementById("topicDescrpt").innerHTML ="Is a type of website that sell car parts.";
+}
+function previewImg5(imgSrc){
+ document.getElementById("imgViewer").src = imgSrc.src;
+ imgContent[imgCount][0] = imgSrc.id;
+ document.getElementById("topicTtl").innerHTML ="A-Studio";
+ document.getElementById("topicDescrpt").innerHTML ="Part of the Premium mechanics website.";
+}
+function previewImg6(imgSrc){
+ document.getElementById("imgViewer").src = imgSrc.src;
+ imgContent[imgCount][0] = imgSrc.id;
+ document.getElementById("topicTtl").innerHTML ="Parts";
+ document.getElementById("topicDescrpt").innerHTML ="Its like calculator application but html and css design.";
+}
+function previewImg7(imgSrc){
+ document.getElementById("imgViewer").src = imgSrc.src;
+ imgContent[imgCount][0] = imgSrc.id;
+ document.getElementById("topicTtl").innerHTML ="Calculator";
+ document.getElementById("topicDescrpt").innerHTML ="Its like calculator application but html and css design.";
+}
+function previewImg8(imgSrc){
+ document.getElementById("imgViewer").src = imgSrc.src;
+ imgContent[imgCount][0] = imgSrc.id;
+ document.getElementById("topicTtl").innerHTML ="Cisco";
+ document.getElementById("topicDescrpt").innerHTML ="Cisco pocket tracer is one of the project that i use all my time.";
+}
+function previewImg9(imgSrc){
+ document.getElementById("imgViewer").src = imgSrc.src;
+ imgContent[imgCount][0] = imgSrc.id;
+ document.getElementById("topicTtl").innerHTML ="Calendar";
+ document.getElementById("topicDescrpt").innerHTML ="Cras dapibus ipsum a consequat tincidund";
+}
+</script>
+</body>
+</html>

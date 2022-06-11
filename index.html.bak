@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Fortfolio</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+</head>
+<body>
+	<!----First Page Section start---->
+	<nav>
+	<div class="topnav" id="myTopnav">
+				
+				<a href="index.html">Home</a>
+				<a href="aboutme.html">About Me</a>
+				<a href="projects.html">Projects</a>
+				<a href="certificate.html">Certificates</a>
+			</div>
+		</nav>
+	<div class="pic">
+		<div class="content">
+			<h4>Hello, my name is</h4>
+			<h1>Julius V. Aristain</h1>
+			<h3>From BSIT - A602</h3>
+		</div>
+		<div class="imgcontainer">
+      <img src="img/me.jpg" alt="Avatar" class="avatar">
+    </div>
+	</div>
+	
+	<!------Contact Me------>
+	<footer>
+	<div class="contact-me">
+		<p>JULIUS V. ARISTAIN</p>
+		<p>For more question about my website click my social media account.</p>
+		<div class="social">
+			<a href="https://www.facebook.com/aristainj"><i class="fab fa-facebook-f"></i></a>
+			<a href="https://www.instagram.com/aristainj/?hl=en"><i class="fab fa-instagram"></i></a>
+			<a href="#"><i class="fab fa-dribbble"></i></a>
+		</div>
+		</div>
+	</footer>
+</body>
+</html>
